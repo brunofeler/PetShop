@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Pet Shop</title>
+</head>
+
+<body>
+
+    
+
+    <div class="container">
+        <h1> GAGA'S PET SHOP</h1>
+        <div class="header">
+            <span> Pet Registration </span>
+            <button onclick="openModal()" id="new">Register</button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pet Name</th>
+                        <th>Specie</th>
+                        <th>Breed</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Fur type</th>
+                        <th>Owner</th>
+                        <th class="action">Edit</th>
+                        <th class="action">Delete</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="modal-container">
+        <div class="modal">
+
+            <form>
+
+                <label for="petName">Pet Name</label>
+                <input type="text" id="petName" required>
+                <br>
+                <label for="specie">Specie</label>
+                <input type="text" id="specie" required>
+                <br>
+                <label for="breed">Breed</label>
+                <input type="text" id="breed" required>
+                <br>
+                <label for="height">Height</label>
+                <input type="text" id="height" required>
+                <br>
+                <label for="weight">Weight</label>
+                <input type="text" id="weight" required>
+                <br>
+                <label for="furType">Fur type</label>
+                <input type="text" id="furType" required>
+                <br>
+                <label for="fowner">Owner</label>
+                <input type="text" id="owner" required>
+
+                <button id="btnSave">Save</button>
+
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
